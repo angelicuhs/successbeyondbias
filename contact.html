@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Beyond Bias - Contact</title>
+    <!-- Link the external style3.css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include the Google Fonts link for the "Bebas Neue" font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        /* Add custom styles for the contact form */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label, input, textarea, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group label {
+            flex: 1;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .thank-you-message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Success Beyond Bias</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="organizations.html">Organizations to Support</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button onclick="toggleMenu()">Toggle Menu</button>
+    </nav>
+
+    <main>
+        <!-- Your Contact page content goes here -->
+       <!-- Your Contact page content goes here -->
+<section>
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/mknlglee" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required> <!-- Use "_replyto" as the name for email field -->
+        </div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Add a hidden input field with your email address to receive form submissions -->
+        <input type="hidden" name="_cc" value="your_email@example.com"> <!-- Replace "your_email@example.com" with your actual email address -->
+
+        <button type="submit">Submit</button>
+    </form>
+    <div class="thank-you-message" id="thank-you-msg">
+        <h3>Thank you for your message!</h3>
+        <p>I'll respond back ASAP :D</p>
+    </div>
+     <!-- Add the additional sentence below the form -->
+     <p>Feel free to reach out if you have any questions about the website, want to reach out and help, or just want to talk :D</p>
+    </section>
+</main>
+
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Success Beyond Bias | All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
+
+
